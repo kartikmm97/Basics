@@ -1,0 +1,7 @@
+import random
+list1 = range(10,random.randint(10,50))
+print(list1)
+list2 = range(5,random.randint(5,30))
+print(list2)
+commonlist = [number for number in list1 if number in list2]
+print("Elements common in both the lists are " + str(commonlist))
