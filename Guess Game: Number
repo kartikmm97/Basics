@@ -1,0 +1,17 @@
+import random
+number = str(random.randint(1,9))
+tries = 0
+guess = 0
+limit = 5
+while guess != number and tries != limit:
+    guess = input("\nGuess a number from 1 to 9: ")
+    tries += 1
+    if guess > number:
+        print("\nYour guess is on the upper side.")
+    if guess < number:
+        print("\nYour guess is on the lower side.")
+if tries == limit and guess != number:
+    print("\nSorry!! You are out of guesses.")
+else:
+    print("\nHurray!! You guessed it right.")
+    print("\nIt took you " + str(tries) + " attempts to get it right.")
