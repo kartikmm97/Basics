@@ -1,0 +1,13 @@
+def set_list():
+    import random
+    a = range(1,random.randint(2,50))
+    b = range(1,random.randint(2,50))
+    r_a = random.randint(1,10)
+    r_b = random.randint(1,10)
+    d = [x*r_a for x in a]
+    e = [x*r_b for x in b]
+    print("List_1: " + str(d))
+    print("List_2: " + str(e))
+    f = set(d).intersection(e)
+    print("Common_List: " + str(list(f)))
+set_list()
