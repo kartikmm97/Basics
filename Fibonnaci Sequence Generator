@@ -1,0 +1,19 @@
+def fibonnaci():
+    number = int(input("\nHow many fibonacci numbers would you like to generate?\n"))
+    count = 3
+    list1 = [1]
+    list2 = [1,1]
+    if number == 1:
+        print(list1)
+    if number == 2:
+        print(list2)
+    while number > 2 and count <= number:
+        list2.append(list2[-1] + list2[-2])
+        count += 1
+    print(list2)
+fibonnaci()
+restart = str(input("\nWould you like to try again?\n")).lower()
+if restart == "yes":
+    fibonnaci()
+else:
+    exit()
