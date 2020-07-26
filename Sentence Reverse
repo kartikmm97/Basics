@@ -1,0 +1,8 @@
+def sentence_reverse():
+    sentence = input("Please enter something about you: \n")
+    x = sentence.split()
+    y = ' '.join(x[::-1])
+    z = ' '.join(reversed(x))
+    print(y)
+    print(z)
+sentence_reverse()
